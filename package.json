@@ -1,10 +1,12 @@
 {
     "name": "formula1-api-minimal",
     "version": "1.0.0",
-    "description": "A minimal Formula 1 API providing fast access to teams and drivers data.",
+    "description": "A minimal, read-optimized Formula 1 API for the 2026 season, providing teams and drivers data.",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "dev": "tsx watch --env-file=.env src/server.ts",
+        "build": "tsc",
+        "start": "node dist/server.js"
     },
     "repository": {
         "type": "git",
